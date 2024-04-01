@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article on HTML Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Article on HTML Forms</h1>
+    </header>
+
+    <main>
+        <div id="article">
+            <h2>Article on HTML Forms</h2>
+
+            <h3>What are Forms?</h3>
+            <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+            </p>
+            <p>HTML forms are used to create (rather primitive) GUIs on Web pages. Usually, the purpose is to ask the
+                user for information. The information is then sent back to the server.</p>
+            <p>Example:</p>
+            <img src="F1.png" height="200">
+
+            <h2>HTML Form Elements</h2>
+
+            <h3>1. &lt;form&gt; Element</h3>
+
+            <p>The &lt;form&gt; element is the container for all form elements. It defines the start and end of the form
+                and specifies how the data will be submitted.</p>
+
+            <pre>
+&lt;form action="/submit" method="POST"&gt;
+  <!-- Form elements go here -->
+&lt;/form&gt;
+        </pre>
+
+            <ul>
+                <li><strong>action:</strong> Specifies the URL where the form data will be submitted.</li>
+                <li><strong>method:</strong> Defines the HTTP method to be used (GET or POST).</li>
+                <li><strong>GET: </strong>The data is appended to the URL as a query string, making it visible in the
+                    address bar. This method is suitable for sending non-sensitive information.</li>
+                <li><strong>POST: </strong>The data is sent in the request body, hidden from the URL. This method is
+                    preferred for sensitive data like passwords or credit card information.</li>
+            </ul>
+
+            <h3>2. &lt;input&gt; Element</h3>
+
+            <p>The &lt;input&gt; element is used to create various types of input fields such as text, password,
+                checkbox, radio button, etc.</p>
+
+            <pre>
+&lt;input type="text" name="username" placeholder="Enter your username" required&gt;
+        </pre>
+
+            <ul>
+                <li><strong>type:</strong> Specifies the type of input field (text, password, checkbox, etc.).</li>
+                <li><strong>placeholder:</strong> Provides a hint to the user about the expected input.</li>
+                <li><strong>required:</strong> Makes the input field mandatory.</li>
+                <li><strong>name:</strong> the name of the element</li>
+                <li><strong>value:</strong> the “value” of the element; used in different ways for different values of
+                    type</li>
+                <li><strong>readonly:</strong> the value cannot be changed</li>
+                <li><strong>disabled:</strong> the user can’t do anything with this element</li>
+                <li>Other arguments are defined for the input tag but have meaning only for certain values of type</li>
+            </ul>
+
+            <h3>Examples:</h3>
+            <p>A text field:</p>
+            <pre>
+&lt;input type="text" name="textfield" value="with an initial value"&gt;
+        </pre>
+            <p>A multi-line text field:</p>
+            <pre>
+&lt;textarea name="textarea" cols="24" rows="2"&gt;Hello&lt;/textarea&gt;
+        </pre>
+            <p>A password field:</p>
+            <pre>
+&lt;input type="password" name="textfield3" value="secret"&gt;
+        </pre>
+
+
+            <h3>3. &lt;textarea&gt; Element</h3>
+
+            <p>The &lt;textarea&gt; element allows users to input multi-line text.</p>
+
+            <pre>
+&lt;textarea name="message" rows="4" cols="50" placeholder="Enter your message"&gt;&lt;/textarea&gt;
+        </pre>
+
+            <ul>
+                <li><strong>rows:</strong> Specifies the number of visible text lines.</li>
+                <li><strong>cols:</strong> Specifies the number of visible text columns.</li>
+            </ul>
+
+            <h3>4. &lt;select&gt; Element</h3>
+
+            <p>The &lt;select&gt; element creates a dropdown list for selecting options.</p>
+
+            <pre>
+&lt;select name="gender"&gt;
+  &lt;option value="male"&gt;Male&lt;/option&gt;
+  &lt;option value="female"&gt;Female&lt;/option&gt;
+  &lt;option value="other"&gt;Other&lt;/option&gt;
+&lt;/select&gt;
+        </pre>
+
+            <ul>
+                <li><strong>&lt;option&gt;:</strong> Defines the options within the dropdown list.</li>
+            </ul>
+
+            <h3>5. &lt;button&gt; Element</h3>
+
+            <p>The &lt;button&gt; element represents a clickable button.</p>
+
+            <pre>
+&lt;button type="submit"&gt;Submit&lt;/button&gt;
+        </pre>
+
+            <ul>
+                <li><strong>type:</strong> Specifies the type of button (submit, reset, or button).</li>
+            </ul>
+
+            <ul>
+                <li>A submit button:</li>
+                <pre>&lt;input type="submit" name="Submit" value="Submit"&gt;</pre>
+                <li>A reset button:</li>
+                <pre>&lt;input type="reset" name="Reset" value="Reset"&gt;</pre>
+                <li>A plain button:</li>
+                <pre>&lt;input type="button" name="Button" value="Button"&gt;</pre>
+                <li>A checkbox:</li>
+                <pre>&lt;input type="checkbox" name="Checkbox" value="Checkbox"&gt;</pre>
+            </ul>
+
+            <h3>6. &lt;label&gt; Element</h3>
+
+            <p>The &lt;label&gt; element defines a label for an input element.</p>
+
+            <pre>
+&lt;label for="username"&gt;Username:&lt;/label&gt;
+&lt;input type="text" id="username" name="username"&gt;
+        </pre>
+
+            <ul>
+                <li><strong>for:</strong> Associates the label with the corresponding input field using its
+                    <code>id</code> attribute.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Thank you for reading the article.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

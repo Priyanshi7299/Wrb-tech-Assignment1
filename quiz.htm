@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - HTML Form</title>
+
+    <style>
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: lightslategray;
+            text-align: center;
+
+        }
+
+        #subButton {
+            border-radius: 20px;
+            background-color: cornflowerblue;
+            color: aliceblue;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            font-size: 1.2rem;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: beige;
+        }
+
+        #quiz1 {
+            margin-bottom: 50px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body id="quiz1main">
+    <div id="header">
+        <h1>QUIZ ON HTML FORM</h1>
+    </div>
+    <h2 style="margin-bottom: 50px;">Html form</h2>
+    <form id="quiz1">
+
+        <p>Question 1. Which input type creates a text field for entering a single line of text?</p>
+        <input type="radio" name="q1_answer" id="q1_option1" value="text">
+        <label for="q5_option1">a. text</label> <br>
+        <input type="radio" name="q1_answer" id="q1_option2" value="password">
+        <label for="q5_option2">b. password</label> <br>
+        <input type="radio" name="q1_answer" id="q1_option3" value="checkbox">
+        <label for="q5_option3">c. checkbox</label> <br>
+        <input type="radio" name="q1_answer" id="q1_option4" value="radio">
+        <label for="q5_option4">d. radio</label> <br><br>
+
+        <p>Question 2. Which attribute of the &lt;form&gt; element specifies the URL where the form data will be
+            submitted?</p>
+        <input type="radio" name="q2_answer" id="q2_option1" value="action">
+        <label for="q2_option1">a. &nbsp; action</label> <br>
+        <input type="radio" name="q2_answer" id="q2_option2" value="method">
+        <label for="q2_option2">b. &nbsp; method</label> <br>
+        <input type="radio" name="q2_answer" id="q2_option3" value="target">
+        <label for="q2_option3">c. &nbsp; target</label> <br>
+        <input type="radio" name="q2_answer" id="q2_option4" value="enctype">
+        <label for="q2_option4">d. &nbsp; enctype</label> <br><br>
+
+        <p>Question 3. Which HTTP method is suitable for sending sensitive information like passwords or credit card
+            details?</p>
+        <input type="radio" name="q3_answer" id="q3_option1" value="GET">
+        <label for="q3_option1">a. &nbsp; GET</label> <br>
+        <input type="radio" name="q3_answer" id="q3_option2" value="POST">
+        <label for="q3_option2">b. &nbsp; POST</label> <br>
+        <input type="radio" name="q3_answer" id="q3_option3" value="PUT">
+        <label for="q3_option3">c. &nbsp; PUT</label> <br>
+        <input type="radio" name="q3_answer" id="q3_option4" value="DELETE">
+        <label for="q3_option4">d. &nbsp; DELETE</label> <br><br>
+
+        <p>Question 4. What attribute of the &lt;input&gt; element makes the input field mandatory?</p>
+        <input type="radio" name="q4_answer" id="q4_option1" value="required">
+        <label for="q4_option1">a. &nbsp; required</label> <br>
+        <input type="radio" name="q4_answer" id="q4_option2" value="optional">
+        <label for="q4_option2">b. &nbsp; optional</label> <br>
+        <input type="radio" name="q4_answer" id="q4_option3" value="mandatory">
+        <label for="q4_option3">c. &nbsp; mandatory</label> <br>
+        <input type="radio" name="q4_answer" id="q4_option4" value="necessary">
+        <label for="q4_option4">d. &nbsp; necessary</label> <br><br>
+
+        <p>Question 5. What is the purpose of the 'disabled' attribute in HTML input elements?</p>
+        <input type="radio" name="q5_answer" id="q5_option1" value="To hide the input field from the user"
+            name="q6_options">
+        <label for="q5_option1">a. &nbsp; To hide the input field from the user</label> <br>
+        <input type="radio" name="q5_answer" id="q5_option2" value="To make the input field mandatory"
+            name="q6_options">
+        <label for="q5_option2">b. &nbsp; To make the input field mandatory</label> <br>
+        <input type="radio" name="q5_answer" id="q5_option3"
+            value="To prevent the user from interacting with the input field" name="q6_options">
+        <label for="q5_option3">c. &nbsp; To prevent the user from interacting with the input field</label> <br>
+        <input type="radio" name="q5_answer" id="q5_option4" value="To style the input field differently"
+            name="q6_options">
+        <label for="q5_option4">d. &nbsp; To style the input field differently</label> <br><br>
+
+        <p>Question 6. How many visible text lines are specified using the 'rows' attribute of the &lt;textarea&gt;
+            element?</p>
+        <input type="radio" name="q6_answer" id="q6_option1" value="cols">
+        <label for="q6_option1">a. &nbsp; cols</label> <br>
+        <input type="radio" name="q6_answer" id="q6_option2" value="rows">
+        <label for="q6_option2">b. &nbsp; rows</label> <br>
+        <input type="radio" name="q6_answer" id="q6_option3" value="lines">
+        <label for="q6_option3">c. &nbsp; lines</label> <br>
+        <input type="radio" name="q6_answer" id="q6_option4" value="size">
+        <label for="q6_option4">d. &nbsp; size</label> <br><br>
+
+        <p>Question 7: Which attribute is used to specify the URL where the form data will be sent?</p>
+        <input type="radio" name="q7_answer" id="q7_option1" value="a. action">
+        <label for="q7_option1">a. action</label> <br>
+        <input type="radio" name="q7_answer" id="q7_option2" value="b. method">
+        <label for="q7_option2">b. method</label> <br>
+        <input type="radio" name="q7_answer" id="q7_option3" value="c. target">
+        <label for="q7_option3">c. target</label> <br>
+        <input type="radio" name="q7_answer" id="q7_option4" value="d. enctype">
+        <label for="q7_option4">d. enctype</label> <br><br>
+
+
+        <p>Question 8. Which attribute of the &lt;option&gt; element defines the value associated with the option?</p>
+        <input type="radio" name="q8_answer" id="q8_option1" value="label">
+        <label for="q8_option1">a. &nbsp; label</label> <br>
+        <input type="radio" name="q8_answer" id="q8_option2" value="text">
+        <label for="q8_option2">b. &nbsp; text</label> <br>
+        <input type="radio" name="q8_answer" id="q8_option3" value="value">
+        <label for="q8_option3">c. &nbsp; value</label> <br>
+        <input type="radio" name="q8_answer" id="q8_option4" value="option">
+        <label for="q8_option4">d. &nbsp; option</label> <br><br>
+
+        <p>Question 9. What type of button is represented by the &lt;button&gt; element with type='submit'?</p>
+        <input type="radio" name="q9_answer" id="q9_option1" value="Reset">
+        <label for="q9_option1">a. &nbsp; Reset</label> <br>
+        <input type="radio" name="q9_answer" id="q9_option2" value="Submit">
+        <label for="q9_option2">b. &nbsp; Submit</label> <br>
+        <input type="radio" name="q9_answer" id="q9_option3" value="Button">
+        <label for="q9_option3">c. &nbsp; Button</label> <br>
+        <input type="radio" name="q9_answer" id="q9_option4" value="Cancel">
+        <label for="q9_option4">d. &nbsp; Cancel</label> <br><br>
+
+        <p>Question 10: Which attribute is used to define the HTTP method used when submitting the form?</p>
+        <input type="radio" name="q10_answer" id="q10_option1" value="a. action">
+        <label for="q10_option1">a. action</label> <br>
+        <input type="radio" name="q10_answer" id="q10_option2" value="b. method">
+        <label for="q10_option2">b. method</label> <br>
+        <input type="radio" name="q10_answer" id="q10_option3" value="c. target">
+        <label for="q10_option3">c. target</label> <br>
+        <input type="radio" name="q10_answer" id="q10_option4" value="d. enctype">
+        <label for="q10_option4">d. enctype</label> <br><br>
+
+
+        <br><br><br>
+        <button type="submit" id="subButton">Check Answers</button>
+    </form>
+
+
+
+
+    <script>
+        document.getElementById('quiz1').addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var main = document.getElementById('quiz1main');
+
+            var q1_selectedOption = document.querySelector('input[name="q1_answer"]:checked');
+            var q2_selectedOption = document.querySelector('input[name="q2_answer"]:checked');
+            var q3_selectedOption = document.querySelector('input[name="q3_answer"]:checked');
+            var q4_selectedOption = document.querySelector('input[name="q4_answer"]:checked');
+            var q5_selectedOption = document.querySelector('input[name="q5_answer"]:checked');
+            var q6_selectedOption = document.querySelector('input[name="q6_answer"]:checked');
+            var q7_selectedOption = document.querySelector('input[name="q7_answer"]:checked');
+            var q8_selectedOption = document.querySelector('input[name="q8_answer"]:checked');
+            var q9_selectedOption = document.querySelector('input[name="q9_answer"]:checked');
+            var q10_selectedOption = document.querySelector('input[name="q10_answer"]:checked');
+
+            if (q1_selectedOption && q2_selectedOption && q3_selectedOption && q4_selectedOption && q5_selectedOption && q6_selectedOption && q7_selectedOption && q8_selectedOption && q9_selectedOption && q10_selectedOption) {
+                var q1_answer = q1_selectedOption.value;
+                var q2_answer = q2_selectedOption.value;
+                var q3_answer = q3_selectedOption.value;
+                var q4_answer = q4_selectedOption.value;
+                var q5_answer = q5_selectedOption.value;
+                var q6_answer = q6_selectedOption.value;
+                var q7_answer = q7_selectedOption.value;
+                var q8_answer = q8_selectedOption.value;
+                var q9_answer = q9_selectedOption.value;
+                var q10_answer = q10_selectedOption.value;
+
+                var correctAnswers = 0;
+
+
+                if (q1_answer === "text") {
+                    correctAnswers++;
+                }
+                if (q2_answer === "action") {
+                    correctAnswers++;
+                }
+                if (q3_answer === "POST") {
+                    correctAnswers++;
+                }
+                if (q4_answer === "required") {
+                    correctAnswers++;
+                }
+                if (q5_answer === "To prevent the user from interacting with the input field") {
+                    correctAnswers++;
+                }
+                if (q6_answer === "rows") {
+                    correctAnswers++;
+                }
+                if (q7_answer === "action") {
+                    correctAnswers++;
+                }
+                if (q8_answer === "value") {
+                    correctAnswers++;
+                }
+                if (q9_answer === "Submit") {
+                    correctAnswers++;
+                }
+                if (q10_answer === "method") {
+                    correctAnswers++;
+                }
+
+                var message = "<h1>Quiz Results</h1><br>";
+                message += "<p>Question 1. Which input type creates a text field for entering a single line of text?</p>";
+                message += "<p>Your Answer: " + q1_answer + "<br>Correct Answer: text<br>Explanation: The text input type creates a single-line text field where users can enter text.</p><br>";
+                message += "<p>Question 2. Which attribute of the &lt;form&gt; element specifies the URL where the form data will be submitted?</p>";
+                message += "<p>Your Answer: " + q2_answer + "<br>Correct Answer: action<br>Explanation: The 'action' attribute of the &lt;form&gt; element specifies the URL where the form data will be submitted.</p><br>";
+                message += "<p>Question 3. Which HTTP method is suitable for sending sensitive information like passwords or credit card details?</p>";
+                message += "<p>Your Answer: " + q3_answer + "<br>Correct Answer: POST<br>Explanation: The 'POST' method is suitable for sending sensitive information as it sends data in the request body, making it hidden from the URL.</p><br>";
+                message += "<p>Question 4. What attribute of the &lt;input&gt; element makes the input field mandatory?</p>";
+                message += "<p>Your Answer: " + q4_answer + "<br>Correct Answer: required<br>Explanation: The 'required' attribute of the &lt;input&gt; element makes the input field mandatory, requiring the user to fill it in before submitting the form.</p><br>";
+
+                message += "<p>Question 5. What is the purpose of the 'disabled' attribute in HTML input elements?</p>";
+                message += "<p>Your Answer: " + q5_answer + "<br>Correct Answer: To prevent the user from interacting with the input field<br>Explanation: The 'disabled' attribute in HTML input elements is used to prevent the user from interacting with the input field.</p><br>";
+                message += "<p>Question 6. How many visible text lines are specified using the 'rows' attribute of the &lt;textarea&gt; element?</p>";
+                message += "<p>Your Answer: " + q6_answer + "<br>Correct Answer: rows<br>Explanation: The 'rows' attribute of the &lt;textarea&gt; element specifies the number of visible text lines.</p><br>";
+
+                message += "<p>Question 7. Which attribute is used to specify the URL where the form data will be sent?</p>";
+                message += "<p>Your Answer: " + q7_answer + "<br>Correct Answer: action;<br>Explanation: The action attribute specifies the URL where the form data will be sent when the form is submitted.</p><br>";
+                message += "<p>Question 8. Which attribute of the &lt;option&gt; element defines the value associated with the option?</p>";
+                message += "<p>Your Answer: " + q8_answer + "<br>Correct Answer: value<br>Explanation: The 'value' attribute of the &lt;option&gt; element defines the value associated with the option.</p><br>";
+                message += "<p>Question 9. What type of button is represented by the &lt;button&gt; element with type='submit'?</p>";
+                message += "<p>Your Answer: " + q9_answer + "<br>Correct Answer: Submit<br>Explanation: The &lt;button&gt; element with type='submit' represents a submit button, which is used to submit the form data to the server.</p><br>";
+                message += "<p>Question 10. Which attribute is used to define the HTTP method used when submitting the form?</p>";
+                message += "<p>Your Answer: " + q10_answer + "<br>Correct Answer: method;<br>Explanation: The method attribute specifies the HTTP method used when submitting the form, either get or post.</p><br>";
+                message += "<br>Your Score: " + correctAnswers + "/10";
+
+                main.innerHTML = (message);
+
+
+            } else {
+                alert("Please answer all questions!");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

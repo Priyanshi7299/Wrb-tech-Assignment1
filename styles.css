@@ -1,0 +1,196 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:mistyrose;
+    background-image: url('https://png.pngtree.com/background/20220731/original/pngtree-simple-aestetic-background-picture-image_1894560.jpg');
+}
+
+header {
+    background-color:lightslategray;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav .logo{
+    float: left;
+    margin-left: 20px;
+    margin-top: -88px;
+    text-decoration: none;
+}
+
+nav .nav_link{
+    float: right;
+    margin-top: -20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 20px;
+    
+}
+
+.nav_link ul {
+    margin-top: -50px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    margin-top: 50px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+main {
+    margin: 20px;
+    margin-top: 100px;
+}
+
+#about {
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#about .abt_me h2{
+    font-size: 20px;
+}
+
+#about h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#Skills {
+    font-family: 'gill sans';
+    border: 10px solid rgb(0, 0, 0);
+}
+#about ul li{
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+}
+
+#about p {
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+#article {
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+#article h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#article h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#article p {
+    color: #666;
+    font-size: 16px;
+}
+
+#article pre {
+    color: #666;
+    font-size: 16px;
+}
+
+
+#quiz {
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#quiz h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.answer label {
+    display: block;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+.btn {
+    text-align: center;
+}
+
+
+#score {
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.result {
+    text-align: center;
+}
+
+.result h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.result p {
+    color: #777;
+    font-size: 16px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}  
+
